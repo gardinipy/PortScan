@@ -11,7 +11,7 @@ def scan_port(host, port):
             # Tenta conectar. Retorna 0 se houver sucesso.
             code = client.connect_ex((host, port))
             if code == 0:
-                print(f"[+] Porta {port:X<5} aberta") # Formatação alinhada
+                print(f"[+] Porta {port:<5} aberta") # Formatação alinhada
         except socket.gaierror:
             # Erro de resolução de DNS (ex: host não existe)
             pass
